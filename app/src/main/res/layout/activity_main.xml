@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkground"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/logo"
+        android:layout_marginVertical="50dp"
+        android:layout_gravity="center_horizontal"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Get Started"
+        tools:ignore="MissingPrefix"
+        android:layout_marginTop="60dp"
+        fontPath="fonts/OpenSans-Regular.ttf"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:paddingVertical="2dp"
+        android:textSize="14dp"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingEnd="40dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="60dp"
+            android:id="@+id/fb"
+            android:src="@drawable/fb"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="60dp"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/gmail"
+            android:layout_marginHorizontal="20dp"
+            android:layout_toEndOf="@id/fb"
+            android:layout_toRightOf="@id/fb"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/existing"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="MissingPrefix"
+        android:clickable="true"
+        android:textSize="14dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Existing User? Log In"
+        android:layout_margin="50dp"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>
